@@ -78,7 +78,7 @@ type PostData struct {
 
 // TextResponse represents a single text response
 type TextResponse struct {
-	Text         string   `json:"text"`
+	Text         string `json:"text"`
 	Alternatives []struct {
 		Text string `json:"text"`
 	} `json:"alternatives"`
@@ -89,8 +89,8 @@ type TranslationResponse struct {
 	Jsonrpc string `json:"jsonrpc"`
 	ID      int64  `json:"id"`
 	Result  struct {
-		Lang  string          `json:"lang"`
-		Texts []TextResponse  `json:"texts"`
+		Lang  string         `json:"lang"`
+		Texts []TextResponse `json:"texts"`
 	} `json:"result"`
 }
 
