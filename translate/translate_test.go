@@ -21,7 +21,7 @@ func Trans(src string) (dst string) {
 	if result.Data == "" {
 		time.Sleep(time.Second)
 		return Trans(src)
-	} else {
-		return result.Data
 	}
+
+	return result.Data
 }

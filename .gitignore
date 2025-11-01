@@ -1,2 +1,4 @@
 DeepLX
 *.png
+.idea
+.vscode
